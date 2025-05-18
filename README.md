@@ -1,4 +1,4 @@
-# Levenshtein-Only Braille Auto-Correct
+# Braille Auto-Correct
 
 This project provides a simple, real-time auto-correct and suggestion system for Braille input using only the Levenshtein distance algorithm. It’s designed for QWERTY-based Braille typing (keys `s`, `d`, `f`, `j`, `k`, `l` mapping to Braille dots 1–6).
 
@@ -21,7 +21,7 @@ Provide a simple yet effective real-time suggestion system for QWERTY-based Brai
 
 2. **Define your dictionary** (list of words in QWERTY Braille form).
 
-3. **Instantiate**:
+3. **Initialize**:
 
    ```python
    from braille_autocorrect import BrailleAutoCorrect
