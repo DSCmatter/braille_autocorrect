@@ -36,7 +36,13 @@ Provide a simple yet effective real-time suggestion system for QWERTY-based Brai
    suggestions = ac.suggest('sdf', max_dist=2, top_k=3)
    print(suggestions)  # e.g. ['sad', 'ads', 'fad']
    ```
+5. **Outputs**:
 
+```python
+Input: sdf -> Suggestions: ['ads', 'sad', 'fat']
+Input: sd -> Suggestions: ['ads', 'sad', 'cat']
+Input: sdfj -> Suggestions: ['ads', 'sad']
+```
 ---
 
 ## 3. Project Structure
