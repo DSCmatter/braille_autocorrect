@@ -91,13 +91,6 @@ braille_autocorrect.py     # Core implementation
 
 ---
 
-## 7. When to Use & Extensions
+## 7. When to Use
 
 * **Ideal** for prototypes, demos, and dictionaries up to \~50K entries.
-* **Scale-Up**: Add BK-tree indexing or compile hotspots in C/C++ for larger datasets.
-
-## Future Enhancements:
-
-  * Support Damerau–Levenshtein for transpositions.
-  * Parallelize distance computations across cores.
-  * Integrate approximate hashing (LSH) for constant-time lookups.
