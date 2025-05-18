@@ -38,11 +38,11 @@ Provide a simple yet effective real-time suggestion system for QWERTY-based Brai
    ```
 5. **Outputs**:
 
-```python
-Input: sdf -> Suggestions: ['ads', 'sad', 'fat']
-Input: sd -> Suggestions: ['ads', 'sad', 'cat']
-Input: sdfj -> Suggestions: ['ads', 'sad']
-```
+   ```python
+   Input: sdf -> Suggestions: ['ads', 'sad', 'fat']
+   Input: sd -> Suggestions: ['ads', 'sad', 'cat']
+   Input: sdfj -> Suggestions: ['ads', 'sad']
+   ```
 ---
 
 ## 3. Design Overview
