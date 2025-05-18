@@ -45,30 +45,21 @@ Input: sdfj -> Suggestions: ['ads', 'sad']
 ```
 ---
 
-## 3. Project Structure
+## 3. Design Overview
 
-```
-README.md                 
-braille_autocorrect.py     # Core implementation
-```
-
----
-
-## 4. Design Overview
-
-### 4.1 Input Normalization
+### 3.1 Input Normalization
 
 * **Mapping**: `{'s':1, 'd':2, 'f':3, 'j':4, 'k':5, 'l':6}`
 * Convert a key sequence (e.g. `"sdfj"`) → dot pattern string (`"1234"`).
 
-### 4.2 Levenshtein Distance
+### 3.2 Levenshtein Distance
 
 - **DP Table**: Compute in O(n·m) time, where n, m are string lengths.
 - **Space**: O(min(n,m)) by storing only the previous row.
 - **Early Exit**: Abort when the current row’s minimal edit cost exceeds max_dist.
 
 
-### 4.3 Suggestion Logic
+### 3.3 Suggestion Logic
 
 1. **Brute-Force Scan** all dictionary patterns.
 2. **Filter** by distance ≤ `max_dist`.
@@ -77,7 +68,7 @@ braille_autocorrect.py     # Core implementation
 
 ---
 
-## 5. Optimizations
+## 4. Optimizations
 
 * **Early-Exit** in distance calc reduces wasted DP iterations.
 * **Precomputed Patterns** avoid re-mapping on each query.
@@ -86,7 +77,7 @@ braille_autocorrect.py     # Core implementation
 
 ---
 
-## 6. Trade-Offs
+## 5. Trade-Offs
 
 | Choice             | Benefit                              | Drawback                                     |
 | ------------------ | ------------------------------------ | -------------------------------------------- |
@@ -97,6 +88,6 @@ braille_autocorrect.py     # Core implementation
 
 ---
 
-## 7. When to Use
+## 6. When to Use
 
 * **Ideal** for prototypes, demos, and dictionaries up to \~50K entries.
