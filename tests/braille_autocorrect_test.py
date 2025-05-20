@@ -1,6 +1,6 @@
 import unittest
 
-from braille_autocorrect import qwerty_to_pattern, levenshtein, BrailleAutoCorrect
+from src.braille_autocorrect import qwerty_to_pattern, levenshtein, BrailleAutoCorrect
 
 class TestQwertyToPattern(unittest.TestCase):
     def test_single_key(self):
